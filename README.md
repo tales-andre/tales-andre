@@ -13,6 +13,10 @@ I built these to show how I work. The companies in them are fictional and none o
 
 **Cloud, Terraform and Kubernetes**
 
+- [github-actions-safe-deploys](https://github.com/tales-andre/github-actions-safe-deploys): GitHub Actions that build an image once, scan it, wait for an approval, promote it by digest and roll back, tested on a throwaway kind cluster. The AWS and Google Cloud login steps never ran against a real account.
+- [gcp-cloud-run-keyless-deploy](https://github.com/tales-andre/gcp-cloud-run-keyless-deploy): the PDF chatbot packaged for Google Cloud Run in Terraform, set up to deploy through Workload Identity Federation instead of stored keys. Tested offline; never applied to a real project.
+- [kubernetes-helm-release-tested](https://github.com/tales-andre/kubernetes-helm-release-tested): a Helm release installed, upgraded, rolled back and checked for drift on a throwaway cluster in GitHub Actions.
+- [terraform-aws-review-before-after](https://github.com/tales-andre/terraform-aws-review-before-after): a deliberately flawed AWS Terraform setup, each risk fixed in its own commit with a policy check that fails before and passes after.
 - [nextjs-aws-terraform-signed-video](https://github.com/tales-andre/nextjs-aws-terraform-signed-video): private lesson videos behind CloudFront signed links; AWS infrastructure in Terraform, checked by `terraform test` with a mocked provider in GitHub Actions. Not deployed to a real account.
 - [aws-delivery-gap-assessment](https://github.com/tales-andre/aws-delivery-gap-assessment): method, read-only evidence kit and sample report for checking contracted AWS work against what actually runs.
 - [k8s-agent-readonly-lab](https://github.com/tales-andre/k8s-agent-readonly-lab): what actually stops an AI agent from changing a Kubernetes cluster, tested on a throwaway kind cluster.
